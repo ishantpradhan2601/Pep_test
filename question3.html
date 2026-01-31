@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    let n = Number(prompt("Enter the length of array"));
+    let array = [];
+
+    for (let i = 0; i < n; i++) {
+        array[i] = Number(prompt("Enter element " + (i + 1)));
+    }
+    document.write("Old_array" + array);
+    for (let i = 0; i < n; i++) {
+        if (array[i] % 2 === 0) {
+            array[i] = array[i] * array[i];
+        }
+    }
+    document.write("  new_array" + array);
+</script>
+
+</html>

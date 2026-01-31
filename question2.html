@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading"></h1>
+
+    <script>
+        let element = document.getElementById("heading");
+
+        element.textContent = "JAVASCRIPT DOM";
+        element.style.color = "white";
+        element.style.backgroundColor = "black";
+        element.style.textAlign = "center";
+
+        element.classList.add("main-heading");
+
+        if (element.classList.contains("main-heading")) {
+            document.write("main-heading added");
+        }
+        
+         element.textContent="Welcome to JavaScript DOM Manipulation";
+    
+    </script>
+</body>
+</html>
